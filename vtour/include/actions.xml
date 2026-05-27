@@ -1,0 +1,58 @@
+<krpano>
+  <action name="apthide">
+
+<!-- Sala 01 -->
+set(hotspot[hsapto301].visible, false);
+set(hotspot[hsapto601].visible, false);
+set(hotspot[hsapto801].visible, false);
+set(hotspot[hsapto1201].visible, false);
+
+<!-- Sala 02 -->
+set(hotspot[hsapto302].visible, false);
+set(hotspot[hsapto602].visible, false);
+set(hotspot[hsapto802].visible, false);
+set(hotspot[hsapto1202].visible, false);
+
+<!-- Sala 03 -->
+set(hotspot[hsapto303].visible, false);
+set(hotspot[hsapto603].visible, false);
+set(hotspot[hsapto803].visible, false);
+set(hotspot[hsapto1203].visible, false);
+
+<!-- Sala 04 -->
+set(hotspot[hsapto304].visible, false);
+set(hotspot[hsapto604].visible, false);
+set(hotspot[hsapto804].visible, false);
+set(hotspot[hsapto1204].visible, false);
+
+  </action>
+    
+ <action name="aptshow">
+ <!-- Sala 01 -->
+set(hotspot[hsapto301].visible, true);
+set(hotspot[hsapto601].visible, true);
+set(hotspot[hsapto801].visible, true);
+set(hotspot[hsapto1201].visible, true);
+
+<!-- Sala 02 -->
+set(hotspot[hsapto302].visible, true);
+set(hotspot[hsapto602].visible, true);
+set(hotspot[hsapto802].visible, true);
+set(hotspot[hsapto1202].visible, true);
+
+<!-- Sala 03 -->
+set(hotspot[hsapto303].visible, true);
+set(hotspot[hsapto603].visible, true);
+set(hotspot[hsapto803].visible, true);
+set(hotspot[hsapto1203].visible, true);
+
+<!-- Sala 04 -->
+set(hotspot[hsapto304].visible, true);
+set(hotspot[hsapto604].visible, true);
+set(hotspot[hsapto804].visible, true);
+set(hotspot[hsapto1204].visible, true);
+</action>
+
+
+
+</krpano>

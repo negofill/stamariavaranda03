@@ -1,0 +1,110 @@
+﻿<krpano>
+
+
+    <style name="card_vidro"
+           type="container"
+           keep="true"
+           bgcolor="0xffffff"   
+           bgalpha="0.15"
+           bgborder="2 0xffffff 1.0"
+           bgroundedge="25"
+           bgblur="3.0"
+           bgshadow="-7 7 5 0x000000 0.5"
+           bgcapture="true"
+    />
+    
+    <style name="card_vidro_02"
+           type="container"
+           keep="true"
+           bgcolor="0xffffff"   
+           bgalpha="0.40"
+           bgborder="0 0xffffff 1.0"
+           bgroundedge="20"
+           bgblur="1.0"
+           bgcapture="true"
+    />
+
+    <style name="logo_container_style"
+           type="container"
+           align="top"
+           width="90%"
+           height="150"
+           y="25"
+           bgcolor="0x015865"
+           bgalpha="0.9"
+           bgroundedge="20"
+    />
+    
+    <style name="btn_apartamento" 
+           type="text" 
+           keep="true"
+           align="top" 
+           width="70"           
+           css="color:#0a5a60; font-family:Arial; font-size:18px; font-weight:bold; text-align:center; line-height:45px;"
+           bgcolor="0xffffff" 
+           bgalpha="0.9" 
+           bgroundedge="12"
+           bgshadow="0 2 5 0x000000 0.1"
+           cursor="pointer"
+           onover="set(bgalpha, 1.0); set(css, 'color:#000000; font-family:Arial; font-size:18px; font-weight:bold; text-align:center; line-height:45px;');"
+           onout="set(bgalpha, 0.9); set(css, 'color:#0a5a60; font-family:Arial; font-size:18px; font-weight:bold; text-align:center; line-height:45px;');"
+    />
+
+    <style name="txt_coluna" 
+           type="text" 
+           keep="true"
+           align="top" 
+           edge="top"
+           width="75"           
+           css="color:#ffffff; font-family:Arial; font-size:12px; font-weight:bold; text-align:center; line-height:25px;"
+           bgcolor="0x006666" 
+           bgalpha="1.0" 
+           bgroundedge="8"
+    />
+
+
+    
+
+    <layer name="menu_principal" style="card_vidro" width="440" height="560" align="center" x="-20%" y="0" zorder="10">
+        
+        <layer name="logo_container" style="logo_container_style">
+            <layer name="logo_img" url="lg_aquln.png" align="center" keep="true" scale="0.6" />
+        </layer>
+        
+        <layer name="container_colunas" style="card_vidro_02" align="center" y="15%" height="60%" width="90%" zorder="12" >
+            
+            <layer name="coluna_01" type="container" align="left" width="80" height="100%" x="75%" y="5%">
+                    <layer name="tit_c1" style="txt_coluna" html="Coluna 01" y="15" />
+                    <layer name="apt_1201" style="btn_apartamento" html="1201" y="60"  onover="set(hotspot[hsapto1201].visible,true);"  onout="set(hotspot[hsapto1201].visible,false);" />
+                    <layer name="apt_801"  style="btn_apartamento" html="801"  y="120" onover="set(hotspot[hsapto801].visible,true);"  onout="set(hotspot[hsapto801].visible,false);" />
+                    <layer name="apt_601"  style="btn_apartamento" html="601"  y="180" onover="set(hotspot[hsapto601].visible,true);"  onout="set(hotspot[hsapto601].visible,false);" />
+                    <layer name="apt_301"  style="btn_apartamento" html="301"  y="240" onover="set(hotspot[hsapto301].visible,true);"  onout="set(hotspot[hsapto301].visible,false);" onclick="playapt301();" />
+                </layer>
+
+                <layer name="coluna_02" type="container" align="left" width="80" height="100%" x="52%" y="5%">
+                    <layer name="tit_c2" style="txt_coluna" html="Coluna 02" y="15" />
+                    <layer name="apt_1202" style="btn_apartamento" html="1202" y="60"  onover="set(hotspot[hsapto1202].visible,true);"  onout="set(hotspot[hsapto1202].visible,false);" />
+                    <layer name="apt_802"  style="btn_apartamento" html="802"  y="120" onover="set(hotspot[hsapto802].visible,true);"  onout="set(hotspot[hsapto802].visible,false);"   />
+                    <layer name="apt_602"  style="btn_apartamento" html="602"  y="180" onover="set(hotspot[hsapto602].visible,true);"  onout="set(hotspot[hsapto602].visible,false);"   />
+                    <layer name="apt_302"  style="btn_apartamento" html="302"  y="240" onover="set(hotspot[hsapto302].visible,true);"  onout="set(hotspot[hsapto302].visible,false);"   />
+                </layer>
+
+                <layer name="coluna_03" type="container" align="left" width="80" height="100%" x="28%" y="5%">
+                    <layer name="tit_c3" style="txt_coluna" html="Coluna 03" y="15" />
+                    <layer name="apt_1203" style="btn_apartamento" html="1203" y="60"  onover="set(hotspot[hsapto1203].visible,true);"  onout="set(hotspot[hsapto1203].visible,false);" />
+                    <layer name="apt_803"  style="btn_apartamento" html="803"  y="120" onover="set(hotspot[hsapto803].visible,true);"  onout="set(hotspot[hsapto803].visible,false);"  />
+                    <layer name="apt_603"  style="btn_apartamento" html="603"  y="180" onover="set(hotspot[hsapto603].visible,true);"  onout="set(hotspot[hsapto603].visible,false);"  />
+                    <layer name="apt_303"  style="btn_apartamento" html="303"  y="240" onover="set(hotspot[hsapto303].visible,true);"  onout="set(hotspot[hsapto303].visible,false);"  />
+                </layer>
+
+                <layer name="coluna_04" type="container" align="left" width="80" height="100%" x="5%" y="5%">
+                    <layer name="tit_c4" style="txt_coluna" html="Coluna 04" y="15" />
+                    <layer name="apt_1204" style="btn_apartamento" html="1204" y="60"  onover="set(hotspot[hsapto1204].visible,true);"  onout="set(hotspot[hsapto1204].visible,false);"  />
+                    <layer name="apt_804"  style="btn_apartamento" html="804"  y="120" onover="set(hotspot[hsapto804].visible,true);"  onout="set(hotspot[hsapto804].visible,false);"  />
+                    <layer name="apt_604"  style="btn_apartamento" html="604"  y="180" onover="set(hotspot[hsapto604].visible,true);"  onout="set(hotspot[hsapto604].visible,false);"  />
+                    <layer name="apt_304"  style="btn_apartamento" html="304"  y="240" onover="set(hotspot[hsapto304].visible,true);"  onout="set(hotspot[hsapto304].visible,false);"  />
+                </layer>
+            
+        </layer>
+    </layer>
+</krpano>

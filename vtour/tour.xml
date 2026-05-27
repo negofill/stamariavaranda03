@@ -1,0 +1,67 @@
+﻿<krpano version="1.23" title="Virtual Tour">
+	
+	<include url="skin/vtourskin.xml" />
+	<include url="include/actions.xml"/>
+	<include url="include/playvideos.xml"/>
+	<include url="include/menu_vidro.xml"/>
+
+	<!-- customize skin settings: maps, gyro, webvr, thumbnails, tooltips, layout, design, ... -->
+
+
+	<!--
+	    For an alternative skin design either change the <skin_settings> values ''''
+	    from above or optionally include one of the predefined designs from below.
+	-->
+	<!-- <include url="skin/vtourskin_design_flat_light.xml"  /> -->
+	<!-- <include url="skin/vtourskin_design_glass.xml"       /> -->
+	<!-- <include url="skin/vtourskin_design_ultra_light.xml" /> -->
+	<!-- <include url="skin/vtourskin_design_117.xml"         /> -->
+	<!-- <include url="skin/vtourskin_design_117round.xml"    /> -->
+	<!-- <include url="skin/vtourskin_design_black.xml"       /> -->
+	
+
+	''
+	<scene name="scene_02_21_aqualida_b2" title="02_21_aqualida_b2" onstart="" thumburl="panos/02_21_aqualida_b2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+		
+		<control bouncinglimits="calc:image.cube ? true : false" />
+
+		<view hlookat="0.016" vlookat="0.004" fovtype="MFOV" fov="0.943" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+''
+		<preview url="panos/02_21_aqualida_b2.tiles/preview.jpg" />
+
+		<image hfov="1.00" vfov="0.503500" voffset="0.00">
+			<flat url="panos/02_21_aqualida_b2.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,1024x516,2048x1032,4096x2062" />
+		</image>
+
+		<!-- hotspots coluna 01-->
+
+		<hotspot name="hsapto301" style="skin_hotspotstyle" ath="0.295" atv="0.090" depth="1000.0" distorted="false" zoom="false"  />
+		<hotspot name="hsapto601" style="skin_hotspotstyle" ath="0.295" atv="0.041" depth="1000.0" distorted="false" zoom="false"  />
+		<hotspot name="hsapto801" style="skin_hotspotstyle" ath="0.295" atv="-0.007" depth="1000.0" distorted="false" zoom="false"  />
+		<hotspot name="hsapto1201" style="skin_hotspotstyle" ath="0.295" atv="-0.085" depth="1000.0" distorted="false" zoom="false"  />
+
+		<!-- hotspots coluna 02-->
+
+		<hotspot name="hsapto302" style="skin_hotspotstyle" ath="0.255" atv="0.090" depth="1000.0" distorted="false" zoom="false"   />
+		<hotspot name="hsapto602" style="skin_hotspotstyle" ath="0.255" atv="0.041" depth="1000.0" distorted="false" zoom="false"  />
+		<hotspot name="hsapto802" style="skin_hotspotstyle" ath="0.255" atv="-0.007" depth="1000.0" distorted="false" zoom="false"  />
+		<hotspot name="hsapto1202" style="skin_hotspotstyle" ath="0.255" atv="-0.085" depth="1000.0" distorted="false" zoom="false"  />
+
+		<!-- hotspots coluna 03-->
+
+		<hotspot name="hsapto303" style="skin_hotspotstyle" ath="0.150" atv="0.090" depth="1000.0" distorted="false" zoom="false"   />
+		<hotspot name="hsapto603" style="skin_hotspotstyle" ath="0.150" atv="0.040" depth="1000.0" distorted="false" zoom="false"  />
+		<hotspot name="hsapto803" style="skin_hotspotstyle" ath="0.150" atv="-0.010" depth="1000.0" distorted="false" zoom="false"  />
+		<hotspot name="hsapto1203" style="skin_hotspotstyle" ath="0.150" atv="-0.080" depth="1000.0" distorted="false" zoom="false"  />
+
+		<!-- hotspots coluna 04-->
+
+		<hotspot name="hsapto304" style="skin_hotspotstyle" ath="0.130" atv="0.090" depth="1000.0" distorted="false" zoom="false"   />
+		<hotspot name="hsapto604" style="skin_hotspotstyle" ath="0.130" atv="0.040" depth="1000.0" distorted="false" zoom="false"  />
+		<hotspot name="hsapto804" style="skin_hotspotstyle" ath="0.130" atv="-0.010" depth="1000.0" distorted="false" zoom="false"  />
+		<hotspot name="hsapto1204" style="skin_hotspotstyle" ath="0.130" atv="-0.080" depth="1000.0" distorted="false" zoom="false"  />
+
+	</scene>
+
+
+</krpano>
