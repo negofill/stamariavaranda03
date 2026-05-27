@@ -47,7 +47,7 @@
         tween(layer[overlay_video].bgalpha, 0.0, 0.3, default, set(layer[overlay_video].visible, false));
     </action>
 
-    <action name="playapt301"> abrir_video('videos/teste_03.mp4'); 
+    <action name="playapt301"> abrir_video('%VIEWER%/videos/teste_03.mp4'); 
     </action>
 
 
